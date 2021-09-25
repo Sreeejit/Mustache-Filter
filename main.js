@@ -1,4 +1,7 @@
+noseX = 0;
+noseY = 0;
 function preload(){
+Image_draw = loadImage('Mustache.png');
 }
 
 function setup(){
@@ -26,9 +29,11 @@ if (results.length > 0){
 }
 
 function draw(){
+
 image(video, 0 , 0 , 300, 300);
+image(Image_draw, noseX - 20, noseY, 40, 20);
 }
 
 function take_snapshot(){
-save('realtimeFilter.png')
+save('mustacheFlter.png');
 }
